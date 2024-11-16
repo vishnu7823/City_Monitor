@@ -1,0 +1,147 @@
+/* TimelinePage.css */
+.timeline-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    color: #3d1b72;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #6b4db5;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    order: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    order: -1;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6b4db5;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.timeline-content {
+    max-width: 40%;
+    padding: 20px;
+    background: #f5f5fa;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    color: #452b84;
+}
+
+.timeline-year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #452b84;
+  
+}
+
+.timeline-content h2 {
+    font-size: 1.5rem;
+    color: #452b84;
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #3d1b72;
+}
+
+.timeline-image {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.timeline-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .timeline-content {
+        max-width: 90%;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        order: 1;
+        padding-left: 0;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+        order: 1;
+        padding-right: 0;
+    }
+
+    .timeline:before {
+        left: 25px;
+        transform: none;
+    }
+
+    .timeline-icon {
+        left: 25px;
+        transform: none;
+    }
+
+    .timeline-image {
+        width: 90%;
+        padding: 10px;
+    }
+}

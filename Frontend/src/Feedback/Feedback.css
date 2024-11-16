@@ -1,0 +1,62 @@
+.feed-home{
+    background-color: whitesmoke;
+    margin-top: 100px;
+}
+.feedback-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #4d308c;
+  }
+  
+  .feedback-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: whitesmoke;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+  }
+  
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: #4d308c;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group button:hover {
+    background-color: #4d308c;
+    color: black;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  

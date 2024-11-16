@@ -1,0 +1,105 @@
+.footer {
+    background-color: #4d308c;
+    color: white;
+    padding: 40px ;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  
+  }
+  
+  /* Logo and Slogan */
+  .footer-logo {
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer-logo-text {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-slogan {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    color: rgb(188, 191, 40);
+    transition: color 0.3s ease;
+  }
+  
+  /* Contact Information */
+  .footer-contact {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Social Media Icons */
+  .footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 250px;
+    color: whitesmoke;
+    gap: 20px;
+  }
+  
+
+  
+  .footer-social a:hover {
+    color: rgb(188, 191, 40);
+    transition: color 0.3s ease;
+  }
+  
+  /* Feedback Button */
+  .feedback-button {
+    background-color: #f5e6d3;
+    color: #7c3aed;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 35px;
+  }
+  
+  .feedback-button:hover {
+    background-color: beige;
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Copyright */
+  .footer p {
+    margin-top: 5px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+  }
+  

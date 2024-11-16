@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #4d308c;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo-container {
+  flex-grow: 1;
+  display: flex;
+  float: left;
+}
+
+.logo {
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 180px;
+}
+
+.right-container-navbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.right-container-navbar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+.right-container-navbar a:hover {
+  color: rgb(188, 191, 40);
+  transition: color 0.4s ease-out;
+  transform: translateY(-5px);
+}
+
+.home-log-button {
+  width: 100px;
+  height: 50px;
+  color: #7c3aed;
+  background-color: #f5e6d3;
+  border-radius: 20px;
+}
+.home-log-button:hover {
+  transition: 0.2s ease-in;
+  background-color: beige;
+  color: black;
+  cursor: pointer;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 180px;
+}
+
+.header-text h2 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+.header-text button {
+  width: 150px;
+  height: 60px;
+  color: #7c3aed;
+  background-color: #f5e6d3;
+  border-radius: 40px;
+  border: 0;
+  font-size: larger;
+  font-family: monospace;
+  font-weight: bolder;
+  display: inline-block;
+}
+.header-text button:hover {
+  transition: 0.2s ease-in;
+  background-color: beige;
+  color: black;
+  cursor: pointer;
+}
+
+.dec-img {
+  padding-bottom: 80px;
+}
+.dec-img img {
+  width: 100%;
+  height: 50%;
+  opacity: 50%;
+}
+.slogan1 h2 {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+.display1 {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.container1 {
+  width: 90%;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 40px;
+  margin: auto;
+  position: relative;
+}
+.history-head{
+  color: white;
+  text-align: center;
+  margin-left: 600px;
+  margin-bottom: 10px;
+  font-family: monospace;
+  font-weight: bolder;
+  display: flex;
+}
+
+
+.sub-container1,
+.sub-container2 {
+  /* width: 30%; */
+
+  width: 550px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  display: flex;
+  float: left;
+  border-radius: 40px;
+  margin: auto;
+}
+
+.sub-container2 img {
+  top: 50px;
+  left: 50px;
+  width: 500px;
+  height: 60%;
+  margin-top: 100px;
+  margin-left: 182px;
+}
+
+.sub-container1 img {
+  width: 550px;
+  height: 250px;
+  align-items: center;
+  display: flex;
+  float: right;
+  margin-left: 180px;
+  border-radius: 40px;
+}
+
+.sub-container1 {
+  width: 550px; /* adjust size as needed */
+  transition: transform 0.3s ease-out; /* Smooth ease-out transition */
+}
+
+.sub-container1:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  cursor: pointer;
+}
+
+.sub-container2 img {
+  width: 550px;
+  height: 250px;
+  display: flex;
+  margin-left: 180px;
+  margin-top: 5px;
+  border-radius: 40px;
+}
+
+.sub-container1 .hover-text,
+.sub-container2 .hover-text {
+  position: absolute;
+  color: rgb(188, 191, 40);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.sub-container1:hover .hover-text,
+.sub-container2:hover .hover-text {
+  opacity: 1;
+}
+
+.sub-container2 {
+  width: 550px; /* adjust size as needed */
+  transition: transform 0.3s ease-out; /* Smooth ease-out transition */
+}
+
+.sub-container2:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  cursor: pointer;
+}
+
+.dashboard {
+  height: 800px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #4d308c;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.dashboard .display {
+  width: 79%;
+  height: 700px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin: auto;
+  margin-bottom: 20px;
+  overflow: hidden; 
+}
+
+.dashboard  .slideshow-image {
+   /* width:1700px; */
+   height:600px;
+  /* object-fit: cover;  */
+  transition: opacity 1s ease-in-out;
+  margin-left: 180px;
+  border-radius: 50px;
+
+}
+
+
+.dashboard img{
+  width:1000px;
+
+  
+}
+
