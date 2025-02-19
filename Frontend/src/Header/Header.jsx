@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 
 function Header() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -23,13 +24,15 @@ function Header() {
   return (
     <>
       <div className='header'>
-        <nav>
+        <Navbar/>
+
+         {/* <nav>
           <div className='logo-container'>
             <a className='logo' href='/'>
               CITY-MONITOR
             </a>
           </div>
-          <img src='/logo.png' alt='City Monitor Logo' /> {/* Updated alt */}
+          <img src='/logo.png' alt='City Monitor Logo' /> 
           <div className='right-container-navbar'>
             <Link to='/'>Home</Link>
             <Link to='/features'>Features</Link>
@@ -40,7 +43,8 @@ function Header() {
               <button className='home-log-button'>Login</button>
             </Link>
           </div>
-        </nav>
+        </nav>   */}
+
         <div className='header-text'>
           <h2>
             Analysed, Summarised and
