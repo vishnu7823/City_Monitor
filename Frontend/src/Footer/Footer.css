@@ -65,9 +65,10 @@
     display: flex;
     gap: 10px;
     margin-top: 10px;
-    margin-left: 250px;
+    margin-left: 180px;
     color: whitesmoke;
     gap: 20px;
+    color: inherit;
   }
   
 

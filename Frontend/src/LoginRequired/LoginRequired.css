@@ -1,0 +1,11 @@
+
+.login-required-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.login-required-button{
+    margin-left: 700px;
+}

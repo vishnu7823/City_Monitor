@@ -79,14 +79,35 @@ nav button:hover {
   color: black;
   cursor: pointer;
 }
-/* Navbar.css */
+
+/* For the username and logout button visibility */
+.username {
+  cursor: pointer;
+}
+
+.logout-text {
+  display: none;
+  color: white;
+  cursor: pointer;
+  background-color: #4d308c;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 35px; /* Adjust this value based on where you want the logout button */
+}
+
+.logout-text.visible {
+  display: block;
+}
+
+/* Dropdown styles */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 8px;
   font-size: 16px;
@@ -99,7 +120,7 @@ nav button:hover {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -117,3 +138,13 @@ nav button:hover {
   display: block;
 }
 
+@media (max-width: 480px) {
+  .login-box {
+    width: 100%;
+    margin: 15px;
+    padding: 30px;
+    height: auto;
+    min-height: 600px;
+  }
+  /* Rest remains same */
+}

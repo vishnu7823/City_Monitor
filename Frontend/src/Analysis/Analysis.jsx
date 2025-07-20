@@ -26,7 +26,6 @@ const Sidebar = ({ onContentClick, activeContent }) => {
     { id: 19, name: 'Infrastructure Index', graphUrl: 'https://public.tableau.com/views/InfrastructureIndex/InfrastructureIndex?:showVizHome=no&:embed=true' },
     { id: 20, name: 'Intrution Attempts', graphUrl: 'https://public.tableau.com/views/IntrutionAttempts/IntrutionAttempts?:showVizHome=no&:embed=true' },
     { id: 21, name: 'Security Alerts', graphUrl: 'https://public.tableau.com/views/SecurityAlerts/SecurityAlerts?:showVizHome=no&:embed=true' },
-    { id: 22, name: 'All Data', graphUrl: 'https://public.tableau.com/views/AllData_17311505752650/AllData?:showVizHome=no&:embed=true' }
   ];
 
   return (
